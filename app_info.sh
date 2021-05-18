@@ -3,7 +3,7 @@
 echo 'this is a app_info.sh'
 
 nginx_server='http://175.27.236.167'
-mongodb='175.27.236.167'
+
 
 Nginx_info(){
   status_code=$(curl -I -m 10 -o /dev/null -s -w %{http_code} $nginx_server)
